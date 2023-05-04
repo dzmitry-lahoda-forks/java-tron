@@ -10,7 +10,7 @@
       <pattern>%d{HH:mm:ss.SSS} %-5level [%t] [%c{1}]\(%F:%L\) %m%n</pattern>
     </encoder>
     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>INFO</level>
+      <level>DEBUG</level>
     </filter>
   </appender>
 
@@ -62,7 +62,7 @@
     <appender-ref ref="FILE"/>
   </appender>
 
-  <root level="INFO">
+  <root level="DEBUG">
     <!--<appender-ref ref="CONSOLE"/>-->
     <appender-ref ref="ASYNC"/>
   </root>
@@ -84,7 +84,7 @@
   <logger level="INFO" name="API"/>
   <logger level="INFO" name="witness"/>
   <logger level="INFO" name="DB"/>
-  <logger level="INFO" name="capsule"/>
+  <logger level="DEBUG" name="capsule"/>
   <logger level="INFO" name="VM"/>
   <logger level="INFO" name="LEVELDB" additivity="false">
     <appender-ref ref="DB"/>
@@ -97,4 +97,3 @@
   </logger>
 
 </configuration>
-
