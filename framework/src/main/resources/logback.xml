@@ -70,29 +70,29 @@
 
   <appender name="METRICS" class="org.tron.common.prometheus.InstrumentedAppender" />
 
-  <root level="INFO">
+  <root level="DEBUG">
     <appender-ref ref="METRICS" />
   </root>
 
-  <logger level="INFO" name="app"/>
-  <logger level="INFO" name="net"/>
-  <logger level="INFO" name="backup"/>
-  <logger level="INFO" name="discover"/>
-  <logger level="INFO" name="crypto"/>
-  <logger level="INFO" name="utils"/>
-  <logger level="INFO" name="actuator"/>
-  <logger level="INFO" name="API"/>
-  <logger level="INFO" name="witness"/>
-  <logger level="INFO" name="DB"/>
+  <logger level="DEBUG" name="app"/>
+  <logger level="DEBUG" name="net"/>
+  <logger level="DEBUG" name="backup"/>
+  <logger level="DEBUG" name="discover"/>
+  <logger level="DEBUG" name="crypto"/>
+  <logger level="DEBUG" name="utils"/>
+  <logger level="DEBUG" name="actuator"/>
+  <logger level="DEBUG" name="API"/>
+  <logger level="DEBUG" name="witness"/>
+  <logger level="DEBUG" name="DB"/>
   <logger level="DEBUG" name="capsule"/>
-  <logger level="INFO" name="VM"/>
-  <logger level="INFO" name="LEVELDB" additivity="false">
+  <logger level="DEBUG" name="VM"/>
+  <logger level="DEBUG" name="LEVELDB" additivity="false">
     <appender-ref ref="DB"/>
   </logger>
-  <logger level="INFO" name="ROCKSDB" additivity="false" >
+  <logger level="DEBUG" name="ROCKSDB" additivity="false" >
     <appender-ref ref="DB"/>
   </logger>
-  <logger level="INFO" name="tool" additivity="false">
+  <logger level="DEBUG" name="tool" additivity="false">
     <appender-ref ref="CONSOLE"/>
   </logger>
 

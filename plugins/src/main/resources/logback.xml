@@ -48,9 +48,9 @@
   <root level="DEBUG">
     <appender-ref ref="ASYNC"/>
   </root>
-  <logger level="INFO" name="archive"/>
-  <logger level="INFO" name="convert"/>
-  <logger level="INFO" name="lite"/>
-  <logger level="INFO" name="move"/>
+  <logger level="DEBUG" name="archive"/>
+  <logger level="DEBUG" name="convert"/>
+  <logger level="DEBUG" name="lite"/>
+  <logger level="DEBUG" name="move"/>
 
 </configuration>
